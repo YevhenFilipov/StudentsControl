@@ -1,0 +1,270 @@
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: rgb(237, 237, 237);
+    /*background-image: url("/resources/images/backGround.png");*/
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+form {
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+td, th {
+    padding: 3px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+.container {
+    /*background-image: url("/resources/images/cont_BGl.png");*/
+    background-color: #ffffff;
+    max-width: 961px;
+    min-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 25px 25px;
+    text-align: right;
+    box-shadow: 10px 10px 10px rgba(65, 65, 61, 0.79);
+}
+
+header {
+
+    background-color: rgb(237, 237, 237);
+    margin: 0 auto;
+    width: 70%;
+    min-width: 475px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+    border-radius: 5px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: black;*/
+
+}
+
+label {
+    display: block;
+}
+
+h2 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    text-align: left;
+    margin-left: 20px;
+}
+
+input, select {
+    margin: 5px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+h3 {
+    padding: 10px;
+    font-weight: bold;
+}
+
+tr {
+    vertical-align: top;
+}
+
+.logout {
+
+    margin-top: -15px;
+}
+
+.section {
+    text-align: center;
+}
+
+.content {
+
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    margin-top: 30px;
+    width: 90%;
+    min-width: 475px;
+    display: inline-block;
+
+}
+
+.mainLink {
+    margin: 15px;
+    padding: 10px;
+}
+
+.mainLink:hover {
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.loginTable {
+    border: none;
+}
+
+.rightAlignInTable {
+    text-align: right;
+    vertical-align: inherit;
+    border: none;
+}
+
+.highLightBlock {
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
+    margin: 5px;
+    padding: 10px;
+}
+
+.students, .term, .discipline {
+    display: inline-block;
+    width: 32%;
+}
+
+.students {
+    text-align: left;
+}
+
+.term {
+    text-align: right;
+}
+
+.discipline {
+    text-align: center;
+}
+
+.newStudent {
+    margin: 0 auto;
+    text-align: right;
+}
+
+td.error_message {
+    border-style: hidden;
+    font-weight: bold;
+    color: red;
+}
+
+.fullWidthBlock {
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+}
+
+.leftColumnBlock {
+    max-width: 45%;
+    padding-right: 10px;
+    display: inline-block;
+    min-width: 380px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.rightColumnBlock {
+    max-width: 45%;
+    padding-left: 10px;
+    display: inline-block;
+    min-width: 380px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.navigation {
+    margin: 15px;
+}
+
+.checkbox {
+    width: inherit;
+}
+
+.button {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+#disciplines_list {
+    width: 95%;
+}
+
+
+
+
+
+
