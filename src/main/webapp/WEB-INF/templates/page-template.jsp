@@ -48,7 +48,7 @@
         </h1>
     </header>
     <div class="logout">
-        <a href="/logout.php">Logout</a>
+        <a href="${CONTEXT}/logout.php">Logout</a>
     </div>
     <section class="section">
         <jsp:include page="${currentPage}" flush="true"/>

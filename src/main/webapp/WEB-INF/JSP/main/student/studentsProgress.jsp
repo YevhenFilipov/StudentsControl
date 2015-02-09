@@ -3,10 +3,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <nav class="navigation">
-    <a href="${CONTEXT}${CURRENT_MAPPING}/home.php">На
+    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.php">На
         главную
     </a>
-    <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 </nav>
 
