@@ -3,10 +3,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <nav class="navigation">
-    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.html">На
+    <a href="/${CONTEXT}/${CURRENT_MAPPING}/home.html">На
         главную
     </a>
-    <a href="${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="/${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 </nav>
 
@@ -38,7 +38,7 @@
             </c:if>
         </div>
         <div class="rightColumnBlock">
-            <form action="${CONTEXT}${CURRENT_MAPPING}/studentProgress.html"
+            <form action="/${CONTEXT}/${CURRENT_MAPPING}/studentProgress.html"
                   method="GET">
                 <input type="hidden" name="id" id="id_student" value="${student.id }">
 
@@ -119,9 +119,5 @@
                 </c:forEach>
             </table>
         </div>
-
-
     </div>
-
-
 </div>

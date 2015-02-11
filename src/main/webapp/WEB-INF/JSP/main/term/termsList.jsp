@@ -4,10 +4,10 @@
 
 <nav class="navigation">
 
-    <a href="${CONTEXT}${CURRENT_MAPPING}/home.html">На
+    <a href="/${CONTEXT}/${CURRENT_MAPPING}/home.html">На
         главную
     </a>
-    <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="/${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 
 </nav>
@@ -15,7 +15,7 @@
 <div class="content">
     <div class="leftAlign">
 
-        <form action="${CONTEXT}${CURRENT_MAPPING}/termsList.html"
+        <form action="/${CONTEXT}/${CURRENT_MAPPING}/termsList.html"
               method="GET">
 
             <div class="highLightBlock">
@@ -64,7 +64,7 @@
     <div class="rightColumnBlock">
         <c:if test="${CURRENT_ROLE eq 1}">
             <input class="button" type="button" name="createTerm"
-                   value="Создать семестр" onclick="location.href='${CONTEXT}${CURRENT_MAPPING}/termCreating.html'">
+                   value="Создать семестр" onclick="location.href='/${CONTEXT}/${CURRENT_MAPPING}/termCreating.html'">
             <input class="button" type="button"
                    value="Модифицировать текущий семестр..." id="disciplineModifyButton"
                    name="modifying" onclick="modifyTerm()">
