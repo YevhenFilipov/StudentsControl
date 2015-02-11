@@ -5,10 +5,10 @@
 
 <nav class="navigation">
 
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}/home.html">На
+    <a href="${CONTEXT}${CURRENT_MAPPING}/home.html">На
         главную
     </a>
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 
 </nav>
@@ -55,7 +55,7 @@
             <c:if test="${CURRENT_ROLE eq 1}">
                 <input class="button" type="submit"
                        value="Создать студента..." id="studentCreateButton"
-                       name="creating" onclick="location.href='/${CONTEXT}/${CURRENT_MAPPING}/studentCreating.html'">
+                       name="creating" onclick="location.href='${CONTEXT}${CURRENT_MAPPING}/studentCreating.html'">
 
                 <input class="button" type="submit"
                        value="Модифицировать выбранного студетна..." id="studentModifyButton"

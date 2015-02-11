@@ -3,10 +3,10 @@
 
 
 <nav class="navigation">
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}/home.html">На
+    <a href="${CONTEXT}${CURRENT_MAPPING}/home.html">На
         главную
     </a>
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 </nav>
 

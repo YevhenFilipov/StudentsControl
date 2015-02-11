@@ -11,7 +11,6 @@
     <meta name="author" content="fIL"/>
     <title>Demo web application</title>
 
-    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <link rel="stylesheet" type="text/css"
           href="${CONTEXT }/resources/css/jquery-ui-1.10.4.custom.css"/>
     <link rel="stylesheet" type="text/css"
@@ -23,7 +22,6 @@
     <script type="text/javascript"
             src="${CONTEXT }/resources/js/jquery-ui-1.10.4.custom.js"></script>
 
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script>
         $(function () {
             $("#datepicker").datepicker({

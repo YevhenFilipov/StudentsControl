@@ -1,6 +1,9 @@
 package controllers;
 
 import constants.Constants;
+import dao.RoleDao;
+import dao.impl.RoleDaoImpl;
+import entity.Role;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletConfig;
@@ -11,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 public abstract class AbstractWebtasksServletHandler extends HttpServlet
         implements Constants {
@@ -94,7 +98,11 @@ public abstract class AbstractWebtasksServletHandler extends HttpServlet
 
     protected void preHandleRequest(HttpServletRequest request,
                                     HttpServletResponse response) throws Exception {
-
+        final Object role = request.getSession().getAttribute(CURRENT_ROLE);
+        if (role == null &&
+                request.getMethod().equals("GET")){
+            showLoginPage(request, response);
+        }
     }
 
     protected final void handleError(Exception ex, HttpServletRequest request,
@@ -119,10 +127,19 @@ public abstract class AbstractWebtasksServletHandler extends HttpServlet
     protected boolean checkAccess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         final Object currentRole = request.getSession().getAttribute("CURRENT_ROLE");
         if (currentRole == null || !currentRole.equals(1)) {
-            redirectRequest("/error.html", request, response);
+            request.setAttribute("notFound", "true");
+            gotoToJSP("/error.jsp", request, response);
             return false;
         }
         return true;
+    }
+
+    protected void showLoginPage(HttpServletRequest request,
+                                 HttpServletResponse response) throws Exception {
+        final RoleDao roleDao = new RoleDaoImpl();
+        final List<Role> roles = roleDao.getRoles();
+        request.setAttribute("roles", roles);
+        gotoToJSP("/login.jsp", request, response);
     }
 
 }

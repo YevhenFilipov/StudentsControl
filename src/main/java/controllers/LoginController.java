@@ -27,13 +27,7 @@ public class LoginController extends AbstractWebtasksServletHandler {
         }
     }
 
-    protected void showLoginPage(HttpServletRequest request,
-                                 HttpServletResponse response) throws Exception {
-        final RoleDao roleDao = new RoleDaoImpl();
-        final List<Role> roles = roleDao.getRoles();
-        request.setAttribute("roles", roles);
-        gotoToJSP("/login.jsp", request, response);
-    }
+
 
     protected void validateRequest(String username, String password)
             throws InvalidDataException {

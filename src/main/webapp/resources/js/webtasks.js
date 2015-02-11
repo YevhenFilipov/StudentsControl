@@ -11,7 +11,7 @@ function deleteStudents() {
             ids += "|";
         }
     }
-    var form = '<form id="deleteStudentForm" action="/'
+    var form = '<form id="deleteStudentForm" action="'
         + context
         + '/admin/studentsList.html" method="post"><input type="hidden" name="ids" /></form>';
     $("body").append(form);
@@ -32,8 +32,8 @@ function progressStudents() {
         return;
     }
     var id = $(items).attr("id");
-    var form = '<form id="progressStudentsForm" action="/'
-        + context + '/' + mapping
+    var form = '<form id="progressStudentsForm" action="'
+        + context + mapping
         + '/studentProgress.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
     $('#progressStudentsForm input').val(id);
@@ -51,7 +51,7 @@ function modifyingStudent() {
         return;
     }
     var id = $(item).attr("id");
-    var form = '<form id="modifyingStudentForm" action="/'
+    var form = '<form id="modifyingStudentForm" action="'
         + context
         + '/admin/studentModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
@@ -74,7 +74,7 @@ function deleteDiscipline() {
             ids += "|";
         }
     }
-    var form = '<form id="deleteDisciplineForm" action="/'
+    var form = '<form id="deleteDisciplineForm" action="'
         + context
         + '/admin/disciplinesList.html" method="post"><input type="hidden" name="ids" /></form>';
     $("body").append(form);
@@ -94,7 +94,7 @@ function modifyingDiscipline() {
     }
 
     var id = $(item).attr("id");
-    var form = '<form id="modifyingDisciplineForm" action="/'
+    var form = '<form id="modifyingDisciplineForm" action="'
         + context
         + '/admin/disciplinesModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
@@ -109,7 +109,7 @@ function modifyTerm() {
         id = selectElement.options[selectElement.selectedIndex].value;
     }
 
-    var form = '<form id="termModifyingForm" action="/'
+    var form = '<form id="termModifyingForm" action="'
         + context
         + '/admin/termModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
@@ -125,7 +125,7 @@ function deleteTerm() {
     if (selectElement.selectedIndex != -1) {
         id = selectElement.options[selectElement.selectedIndex].value;
     }
-    var form = '<form id="termDeleteForm" action="/'
+    var form = '<form id="termDeleteForm" action="'
         + context
         + '/admin/termsList.html" method="post"><input type="hidden" name="id_term_to_delete" /></form>';
     $("body").append(form);
@@ -218,7 +218,7 @@ function goToChangeMarks() {
     var idStudent = document.getElementById('id_student').value;
     var select = document.getElementById('opening_list');
     var idTerm = select.options[select.selectedIndex].value;
-    var form = '<form id="chooseStudentTermMarksForm" action="/'
+    var form = '<form id="chooseStudentTermMarksForm" action="'
         + context
         + '/admin/ModifyStudentProgress.html" method="get">' +
         '<input type="hidden" name="id_student" value="' + idStudent + '">' +
@@ -262,8 +262,8 @@ function verifyStudentProgressForm() {
 
     var respParam = parseQueryString(window.location.search),
         idCurrTerm = respParam['id_term'];
-    var form = '<form id="ModifyProgressStudentsForm" action="/'
-        + context + '/' + mapping
+    var form = '<form id="ModifyProgressStudentsForm" action="'
+        + context + mapping
         + '/ModifyStudentProgress.html" method="post">' +
         '<input type="hidden" name="discipline_marks" value="' + disciplineMarks + '">' +
         '<input type="hidden" name="id_student" value="' + document.getElementById('id_student').value + '">' +

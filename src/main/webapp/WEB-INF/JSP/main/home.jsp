@@ -4,12 +4,12 @@
 <div class="content">
 
     <div class="students">
-        <a class="mainLink" href="/${CONTEXT }/${CURRENT_MAPPING}/studentsList.html">Студенты</a>
+        <a class="mainLink" href="${CONTEXT }${CURRENT_MAPPING}/studentsList.html">Студенты</a>
     </div>
     <div class="discipline">
-        <a class="mainLink" href="/${CONTEXT }/${CURRENT_MAPPING}/disciplinesList.html">Дисциплины</a>
+        <a class="mainLink" href="${CONTEXT }${CURRENT_MAPPING}/disciplinesList.html">Дисциплины</a>
     </div>
     <div class="term">
-        <a class="mainLink" href="/${CONTEXT}/${CURRENT_MAPPING}/termsList.html">Семестры</a>
+        <a class="mainLink" href="${CONTEXT}${CURRENT_MAPPING}/termsList.html">Семестры</a>
     </div>
 </div>

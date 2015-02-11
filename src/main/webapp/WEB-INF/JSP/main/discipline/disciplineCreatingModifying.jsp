@@ -3,10 +3,10 @@
 
 
 <nav class="navigation">
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}/home.html">На
+    <a href="${CONTEXT}${CURRENT_MAPPING}/home.html">На
         главную
     </a>
-    <a href="/${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
+    <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
     </a>
 </nav>
 
@@ -25,11 +25,11 @@
 
 <c:choose>
     <c:when test="${DISCIPLINE_BUTTON eq 1}">
-        <form id="disciplineForm" class="newDiscipline" action="/${CONTEXT }/${CURRENT_MAPPING}/disciplineCreating.html"
+        <form id="disciplineForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/disciplineCreating.html"
         method="POST">
     </c:when>
     <c:otherwise>
-        <form id="disciplineForm" class="newDiscipline" action="/${CONTEXT }/${CURRENT_MAPPING}/disciplinesModifying.html"
+        <form id="disciplineForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/disciplinesModifying.html"
         method="POST">
     </c:otherwise>
 </c:choose>
