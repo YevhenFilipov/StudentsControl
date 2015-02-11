@@ -24,7 +24,7 @@ public class TermModifyController extends AbstractWebtasksServletHandler {
             return;
         }
 
-        request.getSession().setAttribute(BACK_PAGE, "/termsList.php");
+        request.getSession().setAttribute(BACK_PAGE, "/termsList.html");
         request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "VALIDATION_MESSAGE");
         request.setAttribute("TERM_BUTTON", 2);
 
@@ -72,7 +72,7 @@ public class TermModifyController extends AbstractWebtasksServletHandler {
             if (!termService.modifyTerm(idTerm, term)) {
                 request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "canNotModifyTerm");
             }
-            redirectRequest("/admin/termsList.php", request, response);
+            redirectRequest("/admin/termsList.html", request, response);
             return;
         }
 

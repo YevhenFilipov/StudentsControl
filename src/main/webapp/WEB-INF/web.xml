@@ -30,7 +30,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
-        <url-pattern>/login.php</url-pattern>
+        <url-pattern>/login.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -40,7 +40,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>LogoutController</servlet-name>
-        <url-pattern>/logout.php</url-pattern>
+        <url-pattern>/logout.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -50,11 +50,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>HomePageController</servlet-name>
-        <url-pattern>/student/home.php</url-pattern>
+        <url-pattern>/student/home.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomePageController</servlet-name>
-        <url-pattern>/admin/home.php</url-pattern>
+        <url-pattern>/admin/home.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -64,11 +64,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentsListController</servlet-name>
-        <url-pattern>/admin/studentsList.php</url-pattern>
+        <url-pattern>/admin/studentsList.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>StudentsListController</servlet-name>
-        <url-pattern>/student/studentsList.php</url-pattern>
+        <url-pattern>/student/studentsList.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -77,11 +77,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>DisciplinesListController</servlet-name>
-        <url-pattern>/admin/disciplinesList.php</url-pattern>
+        <url-pattern>/admin/disciplinesList.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DisciplinesListController</servlet-name>
-        <url-pattern>/student/disciplinesList.php</url-pattern>
+        <url-pattern>/student/disciplinesList.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -90,11 +90,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TermsListController</servlet-name>
-        <url-pattern>/admin/termsList.php</url-pattern>
+        <url-pattern>/admin/termsList.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>TermsListController</servlet-name>
-        <url-pattern>/student/termsList.php</url-pattern>
+        <url-pattern>/student/termsList.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -103,7 +103,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TermCreatingController</servlet-name>
-        <url-pattern>/admin/termCreating.php</url-pattern>
+        <url-pattern>/admin/termCreating.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -112,7 +112,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TermModifyController</servlet-name>
-        <url-pattern>/admin/termModifying.php</url-pattern>
+        <url-pattern>/admin/termModifying.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -121,11 +121,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentProgressController</servlet-name>
-        <url-pattern>/admin/studentProgress.php</url-pattern>
+        <url-pattern>/admin/studentProgress.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>StudentProgressController</servlet-name>
-        <url-pattern>/student/studentProgress.php</url-pattern>
+        <url-pattern>/student/studentProgress.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -134,7 +134,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentProgressModifyController</servlet-name>
-        <url-pattern>/admin/ModifyStudentProgress.php</url-pattern>
+        <url-pattern>/admin/ModifyStudentProgress.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -144,11 +144,11 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ErrorController</servlet-name>
-        <url-pattern>/error.php</url-pattern>
+        <url-pattern>/error.html</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ErrorController</servlet-name>
-        <url-pattern>/pageNotFound.php</url-pattern>
+        <url-pattern>/pageNotFound.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -157,7 +157,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentCreatingController</servlet-name>
-        <url-pattern>/admin/studentCreating.php</url-pattern>
+        <url-pattern>/admin/studentCreating.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -166,7 +166,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentModifyingController</servlet-name>
-        <url-pattern>/admin/studentModifying.php</url-pattern>
+        <url-pattern>/admin/studentModifying.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -175,7 +175,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>DisciplineCreatingController</servlet-name>
-        <url-pattern>/admin/disciplineCreating.php</url-pattern>
+        <url-pattern>/admin/disciplineCreating.html</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -184,7 +184,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>DisciplineModifyController</servlet-name>
-        <url-pattern>/admin/disciplinesModifying.php</url-pattern>
+        <url-pattern>/admin/disciplinesModifying.html</url-pattern>
     </servlet-mapping>
 
 
@@ -203,17 +203,17 @@
 
     <error-page>
         <error-code>404</error-code>
-        <location>/pageNotFound.php</location>
+        <location>/pageNotFound.html</location>
     </error-page>
 
     <error-page>
         <error-code>500</error-code>
-        <location>/error.php</location>
+        <location>/error.html</location>
     </error-page>
 
     <error-page>
         <exception-type>java.lang.Throwable</exception-type>
-        <location>/error.php</location>
+        <location>/error.html</location>
     </error-page>
 
     <session-config>

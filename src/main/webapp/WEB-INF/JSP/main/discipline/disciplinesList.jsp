@@ -5,7 +5,7 @@
 
 <nav class="navigation">
 
-    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.php">На
+    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.html">На
         главную
     </a>
     <a href="${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
@@ -45,7 +45,7 @@
         <c:if test="${CURRENT_ROLE eq 1}">
             <input class="button" type="button" id="disciplineCreateButton" name="createDiscipline"
                    value="Создать дисциплину"
-                   onclick="location.href='${CONTEXT}/${CURRENT_MAPPING}/disciplineCreating.php'">
+                   onclick="location.href='${CONTEXT}/${CURRENT_MAPPING}/disciplineCreating.html'">
 
             <input class="button" type="button"
                    value="Модифицировать выбранную дисциплину..." id="disciplineModifyButton"

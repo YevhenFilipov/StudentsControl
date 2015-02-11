@@ -3,7 +3,7 @@
 
 
 <nav class="navigation">
-    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.php">На
+    <a href="${CONTEXT}/${CURRENT_MAPPING}/home.html">На
         главную
     </a>
     <a href="${CONTEXT}/${CURRENT_MAPPING}${BACK_PAGE}">Назад
@@ -25,11 +25,11 @@
 
 <c:choose>
     <c:when test="${STUDENT_BUTTON eq 1}">
-        <form id="studentForm" class="newStudent" action="${CONTEXT }/${CURRENT_MAPPING}/studentCreating.php"
+        <form id="studentForm" class="newStudent" action="${CONTEXT }/${CURRENT_MAPPING}/studentCreating.html"
         method="POST" <%--onsubmit="verifyNewStudentForm()"--%>>
     </c:when>
     <c:otherwise>
-        <form id="studentForm" class="newStudent" action="${CONTEXT }/${CURRENT_MAPPING}/studentModifying.php"
+        <form id="studentForm" class="newStudent" action="${CONTEXT }/${CURRENT_MAPPING}/studentModifying.html"
         method="POST">
     </c:otherwise>
 </c:choose>

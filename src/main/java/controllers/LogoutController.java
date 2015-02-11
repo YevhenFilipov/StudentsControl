@@ -9,6 +9,6 @@ public class LogoutController extends AbstractWebtasksServletHandler {
     @Override
     protected void handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.getSession().invalidate();
-        redirectRequest("/login.php", request, response);
+        redirectRequest("/login.html", request, response);
     }
 }

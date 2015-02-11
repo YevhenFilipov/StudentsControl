@@ -20,7 +20,7 @@ public class StudentCreatingController extends AbstractWebtasksServletHandler {
             return;
         }
 
-        request.getSession().setAttribute(BACK_PAGE, "/studentsList.php");
+        request.getSession().setAttribute(BACK_PAGE, "/studentsList.html");
         request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "VALIDATION_MESSAGE");
         request.setAttribute("STUDENT_BUTTON", 1);
 
@@ -42,7 +42,7 @@ public class StudentCreatingController extends AbstractWebtasksServletHandler {
 
         final StudentService studentService = new StudentServiceImpl();
         if (studentService.addStudent(newStudent))
-            redirectRequest("/admin/studentsList.php", request, response);
+            redirectRequest("/admin/studentsList.html", request, response);
         else {
             request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "CanNotCreateStudent");
             gotoToJSP("main/student/studentsCreatingModifying.jsp", request, response);

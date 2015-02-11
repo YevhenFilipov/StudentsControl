@@ -64,7 +64,7 @@ public class LoginController extends AbstractWebtasksServletHandler {
                 request.getSession().setAttribute(CURRENT_SESSION_ACCOUNT, a);
                 request.getSession().setAttribute(CURRENT_ROLE, idRole);
                 request.getSession().setAttribute(CURRENT_MAPPING, mapping);
-                redirectRequest(mapping + "/home.php", request, response);
+                redirectRequest(mapping + "/home.html", request, response);
             } else {
                 request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "role");
 

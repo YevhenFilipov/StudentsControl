@@ -20,7 +20,7 @@ public class StudentModifyingController extends AbstractWebtasksServletHandler {
             return;
         }
 
-        request.getSession().setAttribute(BACK_PAGE, "/studentsList.php");
+        request.getSession().setAttribute(BACK_PAGE, "/studentsList.html");
         request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "VALIDATION_MESSAGE");
         request.setAttribute("STUDENT_BUTTON", 2);
 
@@ -46,7 +46,7 @@ public class StudentModifyingController extends AbstractWebtasksServletHandler {
         java.sql.Date date = new java.sql.Date(formattedDate.getTime());
         modifyingStudent.setDate(date);
         if (studentService.studentModifying(idStudent, modifyingStudent)) {
-            redirectRequest("/admin/studentsList.php", request, response);
+            redirectRequest("/admin/studentsList.html", request, response);
         } else {
             request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "CanNotModifyStudent");
             gotoToJSP("main/student/studentsCreatingModifying.jsp", request, response);

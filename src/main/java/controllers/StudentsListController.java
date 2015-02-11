@@ -15,7 +15,7 @@ public class StudentsListController extends AbstractWebtasksServletHandler {
     @Override
     protected void handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        request.getSession().setAttribute(BACK_PAGE, "/home.php");
+        request.getSession().setAttribute(BACK_PAGE, "/home.html");
 
         final StudentService studentService = new StudentServiceImpl();
         final String idStudentsToDelete = request.getParameter("ids");

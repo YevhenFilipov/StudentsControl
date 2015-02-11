@@ -3,7 +3,7 @@
 
 
 <nav class="navigation">
-    <a href="${CONTEXT}${CURRENT_MAPPING}/home.php">На
+    <a href="${CONTEXT}${CURRENT_MAPPING}/home.html">На
         главную
     </a>
     <a href="${CONTEXT}${CURRENT_MAPPING}${BACK_PAGE}">Назад
@@ -25,11 +25,11 @@
 
 <c:choose>
     <c:when test="${TERM_BUTTON eq 1}">
-        <form id="termForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/termCreating.php"
+        <form id="termForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/termCreating.html"
         method="POST">
     </c:when>
     <c:otherwise>
-        <form id="termForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/termModifying.php"
+        <form id="termForm" class="newDiscipline" action="${CONTEXT }${CURRENT_MAPPING}/termModifying.html"
         method="POST">
     </c:otherwise>
 </c:choose>

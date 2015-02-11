@@ -80,7 +80,7 @@ public class StudentProgressModifyController extends AbstractWebtasksServletHand
             }
             request.setAttribute("selectTerm", idSelectedTerm);
             request.setAttribute("id", idSelectedStudent);
-            redirectRequest("/admin/studentProgress.php?id=" + idSelectedStudent, request, response);
+            redirectRequest("/admin/studentProgress.html?id=" + idSelectedStudent, request, response);
             return;
         }
         final StudentService studentService = new StudentServiceImpl();
@@ -95,7 +95,7 @@ public class StudentProgressModifyController extends AbstractWebtasksServletHand
         final Double meanMark = new MarkValueService().getMeanMark(marksByTerm);
         request.setAttribute("meanMark", meanMark);
 
-        request.getSession().setAttribute(BACK_PAGE, "/studentProgress.php?id=" + idSelectedStudent);
+        request.getSession().setAttribute(BACK_PAGE, "/studentProgress.html?id=" + idSelectedStudent);
 
         gotoToJSP("main/student/studentsProgress.jsp", request, response);
 

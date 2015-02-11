@@ -22,7 +22,7 @@ public class StudentProgressController extends AbstractWebtasksServletHandler {
     @Override
     protected void handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        request.getSession().setAttribute(BACK_PAGE, "/studentsList.php");
+        request.getSession().setAttribute(BACK_PAGE, "/studentsList.html");
         request.setAttribute("studentProgressButton", 1);
 
         final StudentService studentService = new StudentServiceImpl();

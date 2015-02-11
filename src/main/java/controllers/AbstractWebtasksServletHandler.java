@@ -119,7 +119,7 @@ public abstract class AbstractWebtasksServletHandler extends HttpServlet
     protected boolean checkAccess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         final Object currentRole = request.getSession().getAttribute("CURRENT_ROLE");
         if (currentRole == null || !currentRole.equals(1)) {
-            redirectRequest("/error.php", request, response);
+            redirectRequest("/error.html", request, response);
             return false;
         }
         return true;

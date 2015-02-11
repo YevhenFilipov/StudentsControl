@@ -3,7 +3,7 @@
 
 
 <div class="content">
-    <form action="${CONTEXT }/login.php" method="post">
+    <form action="${CONTEXT }/login.html" method="post">
         <h3>Вход</h3>
 
         <div class="highLightBlock">

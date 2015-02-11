@@ -17,7 +17,7 @@ public class DisciplinesListController extends AbstractWebtasksServletHandler {
 
     @Override
     protected void handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        request.getSession().setAttribute(BACK_PAGE, "/home.php");
+        request.getSession().setAttribute(BACK_PAGE, "/home.html");
         request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "VALIDATION_MESSAGE");
 
         final DisciplineService disciplineService = new DisciplineServiceImpl();

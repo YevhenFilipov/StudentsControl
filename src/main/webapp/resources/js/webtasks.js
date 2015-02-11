@@ -13,7 +13,7 @@ function deleteStudents() {
     }
     var form = '<form id="deleteStudentForm" action="'
         + context
-        + '/admin/studentsList.php" method="post"><input type="hidden" name="ids" /></form>';
+        + '/admin/studentsList.html" method="post"><input type="hidden" name="ids" /></form>';
     $("body").append(form);
     $('#deleteStudentForm input').val(ids);
     $('#deleteStudentForm').submit();
@@ -34,7 +34,7 @@ function progressStudents() {
     var id = $(items).attr("id");
     var form = '<form id="progressStudentsForm" action="'
         + context + mapping
-        + '/studentProgress.php" method="get"><input type="hidden" name="id" /></form>';
+        + '/studentProgress.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
     $('#progressStudentsForm input').val(id);
     $('#progressStudentsForm').submit();
@@ -53,7 +53,7 @@ function modifyingStudent() {
     var id = $(item).attr("id");
     var form = '<form id="modifyingStudentForm" action="'
         + context
-        + '/admin/studentModifying.php" method="get"><input type="hidden" name="id" /></form>';
+        + '/admin/studentModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
     $('#modifyingStudentForm input').val(id);
     $('#modifyingStudentForm').submit();
@@ -76,7 +76,7 @@ function deleteDiscipline() {
     }
     var form = '<form id="deleteDisciplineForm" action="'
         + context
-        + '/admin/disciplinesList.php" method="post"><input type="hidden" name="ids" /></form>';
+        + '/admin/disciplinesList.html" method="post"><input type="hidden" name="ids" /></form>';
     $("body").append(form);
     $('#deleteDisciplineForm input').val(ids);
     $('#deleteDisciplineForm').submit();
@@ -96,7 +96,7 @@ function modifyingDiscipline() {
     var id = $(item).attr("id");
     var form = '<form id="modifyingDisciplineForm" action="'
         + context
-        + '/admin/disciplinesModifying.php" method="get"><input type="hidden" name="id" /></form>';
+        + '/admin/disciplinesModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
     $('#modifyingDisciplineForm input').val(id);
     $('#modifyingDisciplineForm').submit();
@@ -111,7 +111,7 @@ function modifyTerm() {
 
     var form = '<form id="termModifyingForm" action="'
         + context
-        + '/admin/termModifying.php" method="get"><input type="hidden" name="id" /></form>';
+        + '/admin/termModifying.html" method="get"><input type="hidden" name="id" /></form>';
     $("body").append(form);
     $('#termModifyingForm input').val(id);
     $('#termModifyingForm').submit();
@@ -127,7 +127,7 @@ function deleteTerm() {
     }
     var form = '<form id="termDeleteForm" action="'
         + context
-        + '/admin/termsList.php" method="post"><input type="hidden" name="id_term_to_delete" /></form>';
+        + '/admin/termsList.html" method="post"><input type="hidden" name="id_term_to_delete" /></form>';
     $("body").append(form);
     $('#termDeleteForm input').val(id);
     $('#termDeleteForm').submit();
@@ -220,7 +220,7 @@ function goToChangeMarks() {
     var idTerm = select.options[select.selectedIndex].value;
     var form = '<form id="chooseStudentTermMarksForm" action="'
         + context
-        + '/admin/ModifyStudentProgress.php" method="get">' +
+        + '/admin/ModifyStudentProgress.html" method="get">' +
         '<input type="hidden" name="id_student" value="' + idStudent + '">' +
         '<input type="hidden" name="id_term" value="' + idTerm + '">' +
         '</form>';
@@ -264,7 +264,7 @@ function verifyStudentProgressForm() {
         idCurrTerm = respParam['id_term'];
     var form = '<form id="ModifyProgressStudentsForm" action="'
         + context + mapping
-        + '/ModifyStudentProgress.php" method="post">' +
+        + '/ModifyStudentProgress.html" method="post">' +
         '<input type="hidden" name="discipline_marks" value="' + disciplineMarks + '">' +
         '<input type="hidden" name="id_student" value="' + document.getElementById('id_student').value + '">' +
         '<input type="hidden" name="id_term" value="' + idCurrTerm + '">' +

@@ -17,7 +17,7 @@ public class DisciplineModifyController extends AbstractWebtasksServletHandler {
             return;
         }
 
-        request.getSession().setAttribute(BACK_PAGE, "/disciplinesList.php");
+        request.getSession().setAttribute(BACK_PAGE, "/disciplinesList.html");
         request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "VALIDATION_MESSAGE");
         request.setAttribute("DISCIPLINE_BUTTON", 2);
 
@@ -35,7 +35,7 @@ public class DisciplineModifyController extends AbstractWebtasksServletHandler {
         modifiedDiscipline.setName(request.getParameter("discipline_name"));
 
         if (disciplineService.modify(idDiscipline, modifiedDiscipline)) {
-            redirectRequest("/admin/disciplinesList.php", request, response);
+            redirectRequest("/admin/disciplinesList.html", request, response);
         } else {
             request.getSession().setAttribute(Constants.VALIDATION_MESSAGE, "CanNotModifyDiscipline");
             gotoToJSP("main/discipline/disciplineCreatingModifying.jsp", request, response);
